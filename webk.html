@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>JavaScript array push() and pop() example</title>
+<h1><marquee>
+  STACK OPERATIONS
+</marquee></h1>
+<script language="JavaScript">
+var dynamic_array = new Array();
+  function add_item(){
+   var item = document.frm.inputbox.value;
+   dynamic_array.push(item);
+   document.frm.outputbox.value = dynamic_array;
+   }
+  function remove_item(){
+  dynamic_array.pop();
+  document.frm.outputbox.value = dynamic_array;
+  }
+</script>
+</head>
+<body bgcolor="grey">
+  <img src="https://cdn.programiz.com/sites/tutorial2program/files/stack.png" alt="">
+<h2><strong>Example of stack push() and pop()</strong></h2>
+<form name="frm">
+<table width="245" border="0">
+<tr>
+<td width="191">Input Item </td>
+<td width="200"><input type="text" name="inputbox" value=""/></td>
+</tr>
+<hr/>
+<tr>
+<td>Output Item </td>
+<p>
+  <td><input type="text" name="outputbox" value=""/></td>
+</p>
+
+</tr>
+<tr>
+<td colspan="2">
+<div align="center">
+<input type="button" onClick="add_item();" value="Push Item"/>
+<input name="button" type="button" onClick="remove_item();" value="Pop Item"/>
+</div>
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
